@@ -1,0 +1,34 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "WeatherApp is a simple and intuitive weather app designed to keep you informed about real-time weather conditions and forecasts for any location worldwide. With its powerful weather API integration, WeatherApp provides accurate and up-to-date information, allowing you to plan your day with confidence.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obre-bjorn/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obre-bjorn/weather-app/issues"
+  },
+  "homepage": "https://github.com/obre-bjorn/weather-app#readme",
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "prettier": "^3.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
