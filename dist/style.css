@@ -1,12 +1,71 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 
-body{
+body {
     height: 100vh;
     width: 100vw;
-    background: url(./images/bg.jpg);
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    font-size: 16px;
+
+}
+
+#app-container {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: 100% 100%; */
+}
+
+
+#main-detail {
+    background-color: black;
+    opacity: 50%;
+
+}
+
+#controls {
+    padding-left: 2rem;
+    /* padding-top: 2rem; */
+    background: black;
+    opacity: 70%;
+    backdrop-filter: blur(15px);
+}
+
+
+#search-location {
+    width: 100%;
+    display: flex;
+    background: none;
+    gap: .5rem
+}
+
+#search-location>input {
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+#search-location>input[type=text] {
+    flex-grow: 9;
+    border-bottom: 4px solid white;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+#search-location>input[type=text]:focus {
+    outline: none;
+    border-bottom: 4px solid yellowgreen;
+}
+
+#search-location>input[type=submit] {
+    flex-grow: 1;
+    background-color: yellowgreen;
+    color: black;
+    cursor: pointer;
 }
