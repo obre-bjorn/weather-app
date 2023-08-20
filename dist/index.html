@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/53acb3bfdd.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
     <div id="app-container">
         <div id="main-detail">
-            <div class="logo"></div>
+            <div class="logo">Weather App</div>
             <div class="weather-info">
-                <h1>16&deg;</h1>
-                <span>Nairobi</span>
-                <p>16:00 Monday, August 20</p>
+                <h1 id="temp-heading" class="heading">16&deg;</h1>
+                <span id="location" class="heading">Nairobi</span>
+                <p id="date-time">16:00 Monday, August 20</p>
                 <div class="weather-symbol">Cloudy</div>
             </div>
         </div>
         <div id="controls">
             <form action="" id="search-location">
-                <input type="text" id="location" placeholder="Enter Location">
-                <input type="submit" value="Search">
+                <input type="text" id="location" placeholder="Enter Location" name="location">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass icon"></i></button>
 
             </form>
         </div>
