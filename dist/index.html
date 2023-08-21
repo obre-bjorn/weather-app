@@ -15,18 +15,43 @@
         <div id="main-detail">
             <div class="logo">Weather App</div>
             <div class="weather-info">
-                <h1 id="temp-heading" class="heading">16&deg;</h1>
-                <span id="location" class="heading">Nairobi</span>
-                <p id="date-time">16:00 Monday, August 20</p>
-                <div class="weather-symbol">Cloudy</div>
+                <h1  class="heading"><span id="temp-heading">16</span>&deg;</h1>
+                <div>
+                    <span id="location" class="heading">Nairobi</span>
+                    <p id="date-time">16:00 Monday, August 20</p>
+                </div>
+                <div class="weather-symbol">
+                    <img id="weather-icon" src="" alt="" srcset="">
+                    <p id="weather-desc">Cloudy</p>
+                </div>
             </div>
         </div>
         <div id="controls">
             <form action="" id="search-location">
                 <input type="text" id="location" placeholder="Enter Location" name="location">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass icon"></i></button>
-
             </form>
+
+           
+
+            <div class="other-details">
+                <p class="subtitle">Weather Details</p>
+
+                <div class="details">
+                    <p .>Cloudy</p>
+                    <p id="cloudy"></p>
+                </div>
+                <div class="details">
+                    <p>Humidity</p>
+                    <p id="humidity"></p>
+                </div>
+                <div class="details">
+                    <p>Wind</p>
+                    <p id="wind"></p>
+                </div>
+
+
+            </div>
         </div>
     </div>
 </body>
